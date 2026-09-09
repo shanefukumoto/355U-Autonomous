@@ -43,4 +43,4 @@ motion control work described above is mine.
 | High Stakes (2025) | https://github.com/OliverCieslak/355U_HighStakes | introduce particle filter |
 | Push Back (2026) | https://github.com/OliverCieslak/355U_PushBack | Switch to separate odometry wheel |
 
-Built with [VEXcode V5 / PROS — confirm which] in C++.
+Built with PROS in C++.
