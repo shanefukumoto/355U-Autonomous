@@ -16,10 +16,10 @@ robot's estimate of its own position hold up for the full period.
 ## What's in the stack
 
 **Motion control** — PID controllers for drive and turn motion, tuned per
-robot. [One sentence on how you handled tuning across robot revisions.]
+robot. This was retuned frequently using an autonomous procedure. 
 
 **Odometry** — Wheel-encoder-based dead reckoning tracking the robot's pose
-on the field. [Note your tracking wheel setup if you had one.]
+on the field. Used a setup with a tracking wheel attached to an encoder. 
 
 **Localization** — A particle filter using Monte Carlo localization, fusing
 odometry with distance sensor and IMU readings to correct drift against known
@@ -28,20 +28,19 @@ field geometry.
 Result: scoring runs repeatable to roughly an inch, and reduced routine
 runtime.
 
+## Attribution
+
+355U was a team effort. I co-founded the team and led software; Oliver and Adhrit worked on building and driving. The team shared a laptop for all
+development, so commit history in the linked repositories is attributed to a
+single account rather than to individual contributors. The localization and
+motion control work described above is mine.
+
 ## Source by season
 
 | Season | Repository | Notes |
 |---|---|---|
-| [2023–24 game name] | [link] | [what was new that season] |
-| [2024–25 game name] | [link] | |
-| [2025–26 game name] | [link] | |
+| Over Under (2024) | https://github.com/OliverCieslak/355U | introduce PID | 
+| High Stakes (2025) | https://github.com/OliverCieslak/355U_HighStakes | introduce particle filter |
+| Push Back (2026) | https://github.com/OliverCieslak/355U_PushBack | Switch to separate odometry wheel |
 
 Built with [VEXcode V5 / PROS — confirm which] in C++.
-
-## Attribution
-
-355U was a team effort. I co-founded the team and led software; [teammate
-names] worked on [build/design/driving]. The team shared a laptop for most
-development, so commit history in the linked repositories is attributed to a
-single account rather than to individual contributors. The localization and
-motion control work described above is mine.
